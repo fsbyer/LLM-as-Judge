@@ -130,7 +130,7 @@ LLM 评估有什么问题（内部知识 vs ref answer；开销 vs 效率
 
     - 多轮一致性可以作为高置信度的正确性指标。
 
-![image\.png](图片和附件/image.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjdlYmI5NGE1YzA1OWE5Yjc4OWFjNTA5NTNhMTgxMjZfNzUwZDY1ZGI4YjdiOThkYjBlYzVhNTEzNGQ3MzRiNmVfSUQ6NzY5OTgxMTM5Mjg2NTc1MDA0MF8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
 
 
@@ -142,7 +142,7 @@ LLM 评估有什么问题（内部知识 vs ref answer；开销 vs 效率
 
 **不是"给 judge 更多信息 = 更准确的判断"**
 
-![image\.png](图片和附件/image%2012.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjY1NTZmMTRhMDkyODI4OGYyMzM1NDU2MjM3NjJmZDVfZjgzYmI2MTg3MGNjZDU5MjQ4Y2I1Y2JlZmY5ZGJjZTNfSUQ6NzY5OTgxMTYyNjc4MTkzNjg3Nl8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
 
 
@@ -158,7 +158,7 @@ LLM 评估有什么问题（内部知识 vs ref answer；开销 vs 效率
 
 
 
-![image\.png](图片和附件/image%208.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZjNlM2M4YzNkNmNjYTA3NTRjOGY0MTI4YzJhMmVmOGZfMjg3MDhmNzNlMjA1MmM2YTI5MTNhMzIyMWE4MzQ2MjlfSUQ6NzY5OTgyMzYxMzA2NzQ5NjQ1MV8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
 5. **反事实 qwen32b纠正倾向**
 
@@ -232,7 +232,7 @@ label_is_correct: False
 
 2组，一组自然情景；一组包括干扰（推理链、hack）
 
-
+自然场景，添加rubric前：
 
 自然场景，添加 Rubric后：
 
@@ -299,7 +299,7 @@ Alignment 刻画了 Judge 的判断准确程度；
 
 **Findings: **
 
-![image\.png](图片和附件/image%2011.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzdjYmVkMjExZGM1NmU1MTIxNTJjMmVlM2QzZTQyYzdfOGM1MjU4NTBjMGY3ZDE2MmY5OWI0NzgzMTllZWZjZGZfSUQ6NzY5ODc3MDY5ODgwMTU5NzczMV8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
 # RQ2 — Robust
 
@@ -331,7 +331,7 @@ Decision Stability:
 
 **Findings:**
 
-![image\.png](图片和附件/image%2019.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YjcyYjY0MjlkNWQ4MjdlZjcxMzYyYzI0MTg5N2UzZWJfZGM3YzYyYjdmNTVkYTdmYzgxMWE3OTAxZmFkYjkwN2FfSUQ6NzY5NjkzNDgxMzE2MDI3OTAyNV8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
 **推理链注入实验：**
 **强judge表现较为鲁棒；**
@@ -349,9 +349,9 @@ Gold 分为 cf\_answer与orig\_answer
 
 500 case
 
-![image\.png](图片和附件/image%2022.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZDZhNjUzOTI5YmEyOWI5NzMwMTM5YmUzMjgxMWFiMjdfNzJmOWUwOWE4ZjlkZTZiZWQ5ZjRkNDgxZjI3ZWJmMjBfSUQ6NzY5Nzg3ODU2MTM5ODY3MjY3NF8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%201.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmI0NDc4Y2JlNGFjZTc3OTY4MzA4ODdlM2QxMDNhY2JfNjc5MzNkYzQ0ZTJjODE3NjJjMGQyMDI4ZDAyNTBkMjhfSUQ6NzY5OTc3MDUyMzgwNzQzNTc5OV8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
 
 
@@ -378,7 +378,7 @@ HACK_OVERRIDE_INCORRECT = (
 
 **Findings：**
 
-![image\.png](图片和附件/image%2028.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Y2U2MDM4ZGYyNTkwNjNiODE3MzZmMjMzMWRlYmZiNWFfNmYzNDVlMDhiYzg1NWUwZTAyZjcwMGZjZWQxZmQ3MzZfSUQ6NzY5NzU0OTUwOTU3MTg3MzgwM18xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
 1. **强 judge 免疫**
 
@@ -550,6 +550,8 @@ Findings:
 
 
 抽取自然状态下，模型的alignment\_gap\_case，其他case补充，重置成rubric数据集（500条）
+
+自然场景，添加rubric前：
 
 自然场景，添加 Rubric后：
 
@@ -794,15 +796,15 @@ The final judgment must be exactly correct or incorrect, in lowercase and withou
 
 补充 judge has\_answer baseline
 
-![image\.png](图片和附件/image%2026.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NjJmMWMwYWU1YTQ4YTU1NGQyNjljNjk3ZGE0ODkyODVfMGNkNDU1YjhkMTRhZDQzMjM5OGUwYzNkNmVjMTAyOTVfSUQ6NzY5ODkxMjA0MjYzOTg4NzY1M18xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%2023.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjlhZWUzZWI3NDdiNjAxNzcyNDA1MTRiZGNhYzFmMmFfOTY1NzQ3MGQ2MWUwYjA2NzUwYjc2YTFiZDE5OThkMTZfSUQ6NzY5ODkxMjExNzAxNzE2OTE3Nl8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%2016.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzVkZmEwZGM0YjI4YWY2OTE4NWI2MTljYmI1MzVhZWRfMjc0MjIxYTYzNDczMjc4OTA3NTVhZjczNTFhYzZkYWRfSUQ6NzY5Njg4OTcyMTMzMDg2MzExOF8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%2025.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzliNGVjM2ViZDQ5MmM1Yjg5YzRlMWU2ZmYwNmRlN2NfOTE2MzE1MTdhNGNjZmM0MjdjZjMyYTAzMDNiMTEyNzlfSUQ6NzY5Njg4OTc5NTA5MTkwOTY2M18xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%207.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmY0MjRjZDlkN2FkOGU5MTczNTYzYWEwZjlkMmMwNjFfMjM5ZjlkMzA1NWVlNDViMzc2YzYwNWE1NTc0MTJjZTRfSUQ6NzY5Njg4OTg3ODgyNjUwMzQxNl8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
 **Baseline: Exact Match**
 
@@ -818,19 +820,19 @@ The final judgment must be exactly correct or incorrect, in lowercase and withou
 
 ## Full judge Consistency heatmaps
 
-![image\.png](图片和附件/image%203.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=Yjk3ZGI2NTY1NDBlNWY2ZGEzNzg3MWMxZjZkZGM3NThfMDAzYjc4ZDkyMzk0M2I1NmJiMDk3MDRlODUxNmQ2MmJfSUQ6NzY5NjU0ODc2NjIxNzUzODgzMl8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%2017.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTNlODc3MGZjZTdjMDc3NzVkYzBlMGIxOTcxYzA5MGNfYWEzMDMxZWNiY2U2NjE4NzliYTJiZWM5YmE3Yzk1YzFfSUQ6NzY5NjU0ODgzNTc1MzExODk4NF8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%2018.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=M2M0MTM3ZTY3YmU3MTZlNTg3MjUwZTY3ODQ1YWQ2YTBfMDFkZWE3ZjI3ZmNmY2E4NzA5NWMyMjA3NWMzYjFkMTNfSUQ6NzY5NjU0ODkzMTA4NTQwNTQ0MV8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%202.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NzFkMjAzNzVjZTc3ODlmYzRlZGNhNzdhYzFkODZlN2JfMjFjZTVmZjdkYzNlMDdhZGJjMWZlZjJmMGIyMGQwNzhfSUQ6NzY5NjU0OTAxNDI1NDE0NDUwN18xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%2013.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=OTE0ZjRiZWM3YjgzOTkwMzIxMzI3ZWVkMWYwNzQ2ZTFfZjY2NTc3N2ZiNTgxNTg0YjcxMWM0NDRkNTJjYzY1YWZfSUQ6NzY5NjU0OTExMjM0NjQ5NjI4OV8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%2032.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjMyMWEwYThlNGY2M2FjZjIyOTQ3ZjQwODMzOGMzMThfMDFkNjdkZmM4MzBiYzY1OGNiOWVkYjRlZGQ4ZGFhOTFfSUQ6NzY5NjU0OTIyMzgyMjY1ODg0OV8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%2020.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YTA4NWNjMmZiMmIyZjhhY2U2NjhjYjM4NjhhYzQ4YzdfNzg4ZjcwMzc5YWVhM2Q3NmQ2MjNhZDg1ZTUyZDIyOGRfSUQ6NzY5NjU0OTMyODA4ODc0NzAyMV8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
 
 
@@ -838,15 +840,15 @@ The final judgment must be exactly correct or incorrect, in lowercase and withou
 
 ## Input Reasoning
 
-![image\.png](图片和附件/image%2021.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDc1YzUxODJlNjk1MjFmOWRjNTZhMjM3YTIzMTZmMGVfN2NlMzJmMGVhM2E5YzVkMTM3ZjA0MGMzMzQwYWIyZDVfSUQ6NzY5NjkzNDQyODcyNzI4MjcwN18xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
 **Figure 4: Majority Decision Stability With vs\. Without Reasoning Chain **
 
-![image\.png](图片和附件/image%2015.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NTQ2NDIzOGU2YjA0NjBkODJlNDYyOWY3NDAxMmQ3NWVfMThkNjJjM2NjMzEwMDU0OTIxMmZkMDRlYjQxMzEwZWJfSUQ6NzY5NjkzNDQyOTE4NDQxMjY2NV8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
 ## Counter Factual
 
-![image\.png](图片和附件/image%2014.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=NDg4NzA2NGE3YjM5NGMzMDNjYmNlY2M4NzAyZDMyNzlfODRiMWYzYTc0Yzc4N2FmMDhhMWI1N2IzN2JiMWVjNmNfSUQ6NzY5NzU1MDIwMDc5Nzc2MDgwMV8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
 
 
@@ -854,29 +856,29 @@ The final judgment must be exactly correct or incorrect, in lowercase and withou
 
 ## Hack Ablation
 
-![image\.png](图片和附件/image%2010.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzcxZTQwOTA1YzU5MTcyMjc1MzZkMzNlODlmNjlhMGRfMWQ2NTAzNzlkZTI4Njk1ZGUyMzQyY2E5NDRiNWY0ZTJfSUQ6NzY5Njc4MDA4NzA0NTkwMTMzMV8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%206.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZmJjNDA4N2QxMjE3Yjg2ZTU0Y2YxMDlhYzU1NzYwOGVfMWFhZGFjM2JlYjhiZGNmMWE4ZTFmNDhhNGIwNzEzZjVfSUQ6NzY5Njc4MDE4MTc4MDA3MzQ4N18xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%2031.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2Y0Y2EwNjNiOTFmOTk4ZjRjZGNkMjRjMWZkNjkwOTZfOGI5NWIzNjhmMWI0YWYwZjA1N2FiMjZlZWExZjgwYThfSUQ6NzY5NzU1MDQ2ODAwNDA3MjQ4MV8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
 
 
 ## Full Judge Alignment under Gen Correct/Incorrect
 
-![image\.png](图片和附件/image%209.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MGEzNmFmOGI5NzM0OTE4ZDg5NDllYTZlMWI1NmVmZjhfMWE2N2NlZTE3MDU3Mjk2Mzc1MDVkMjhhZTFhZGE4YTBfSUQ6NzY5Njg5NzI4ODY2ODQ4Mjg1NF8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%205.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=ZGQ0ZjRhYTFjOGY2NGVlODY4MDI3ZGI5MzliOWRkNDJfYTU4OTdhMDJhZWQ1MWY2NjRiNzU5NGFhYzA2ZmY5NzdfSUQ6NzY5Njg5NzM1NzU4NTMzNzU4Ml8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%2030.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MjMyM2M1YmFiY2ZiYjNjNjA1NmI5MzIyMGE5NzNiMTZfNDI4YTQ2MjgxNDg3OWExM2M4NDY5ZjFlZjNmYjM2Y2ZfSUQ6NzY5Njg5NzQwNzgyNDc1OTgyOF8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%204.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MzU3OGQ1M2E2ODNmZWIyNzAxNzFmYmNlYzdlMWY4ZjVfZDFmYjQzNzQ3YWVmZDdiNDUyNDBlYzZmNTQ1OGI0ZDFfSUQ6NzY5Njg5NzUxMTQ1MzE5OTY1NF8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%2027.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=MmM0NWRhOWVkM2I1MjQ5M2U2YzNlMmRhOGNlNTYzMTdfMTBjMmRkZmM3MzVjNjg3YWVkMzMzZGNkNWZjNjEyYWZfSUQ6NzY5Njg5NzU4ODUxMTAzNDM3N18xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%2029.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=N2Y5NDYxMGI1MjljZDRkYmIyNjQ0ZDVkNTFmZmQ3YmNfZTc0YmM1NDEyODE5OWU0ZGMwZTA3NGVhODhiYmQxOGZfSUQ6NzY5ODkxNjc5NzI3Nzg2NzE4Nl8xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
-![image\.png](图片和附件/image%2024.png)
+![Image](https://internal-api-drive-stream.feishu.cn/space/api/box/stream/download/authcode/?code=YmFjMTg4MTNmZGU3ZGU3YjAwN2I0ZTBkYzRjODhmNWRfMWE3YWI4YWJkNmFiZmM2ZjBiMmQwNDNkOTNiMWE2NGVfSUQ6NzY5ODkxNjcyNTk3ODY4MDYxN18xNzkyODI5ODYxOjE3OTI5MTYyNjFfVjM)
 
 
 
