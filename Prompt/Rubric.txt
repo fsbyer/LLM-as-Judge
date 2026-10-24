@@ -1,0 +1,28 @@
+JUDGE_PROMPT = """Judge whether [model_answer], the response to [question], is correct based on [gold_answer], the reference answer.
+
+[question]: {question}
+
+[model_answer]: {model_answer}
+
+[gold_answer]: {gold_answer}
+
+Evaluate semantic equivalence between [model_answer] and [gold_answer] in the context of [question], rather than exact wording.
+If [gold_answer] provides alternative answers, matching any one complete alternative is sufficient.
+
+Decision Rules:
+1. **Reference-Based Evaluation**: Use [gold_answer] as the reference for comparison. Do not independently verify or challenge the factual correctness, timeliness, or completeness of [gold_answer]. The task is to evaluate [model_answer] against the reference answer, not to independently fact-check the reference itself.
+2. **Entity Equivalence**: Different names, aliases, abbreviations, transliterations, and translated names should be treated as equivalent when they unambiguously refer to the same entity in the context of the question. Historical and modern names are equivalent only when they refer to the same relevant entity under the temporal context of the question.
+3. **Completeness and Specificity**: [model_answer] must provide sufficient information to answer [question] correctly.
+   - **Greater specificity**: A more specific answer is acceptable if it includes the requested information and does not conflict with [question] or contradict information explicitly stated in [gold_answer].
+   - **Lower specificity**: A less specific answer is acceptable only if it still sufficiently answers the question. Do not require a level of precision beyond what the question asks for. For example, a month or year is sufficient when the question asks for the month or year, respectively; an exact-date question requires the exact date.
+   - **Nonessential differences**: Do not mark an answer incorrect solely because its wording, level of detail, or degree of specificity differs from [gold_answer], provided it conveys the same answer and satisfies the question.
+4. **Alternative Answers and Required Components**: If [gold_answer] explicitly provides alternative answers, matching any one complete alternative is sufficient. If [gold_answer] contains multiple jointly required components, [model_answer] must include all essential components to be considered correct.
+5. **Additional Information**: Correct and relevant additional information does not invalidate an otherwise correct answer. However, materially false, contradictory, or misleading additional claims make the entire answer incorrect, even if the core answer is correct. Do not assume that additional information is false merely because it is absent from [gold_answer]. Treat it as incorrect only if it contradicts [question] or information explicitly stated in [gold_answer], or is clearly false based on well-established facts. Additional information must also satisfy the category, scope, and constraints specified in [question].
+
+Judge [model_answer] as correct if it fulfills the above decision rules and is semantically equivalent to [gold_answer]; otherwise, judge it as incorrect.
+
+Return exactly two lines:
+Explanation: <a brief explanation on a single line>
+Final Judgment: <correct or incorrect>
+
+The final judgment must be exactly correct or incorrect, in lowercase and without quotation marks. Do not include any additional text."""
